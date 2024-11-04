@@ -9,9 +9,9 @@
 ```mermaid
 flowchart LR
     DataSource[Data Source] --> DataFactory[Data Factory]
-    DataFactory --> RawDataStore[Raw Data Store\nData Lake Gen 2]
+    DataFactory --> RawDataStore[Raw Data Store<br/>Data Lake Gen 2]
     RawDataStore --> AzureDatabricks[Azure Databricks]
-    AzureDatabricks --> TransformedDataStore[Transformed Data\nData Lake Gen 2]
+    AzureDatabricks --> TransformedDataStore[Transformed Data<br/>Data Lake Gen 2]
     TransformedDataStore --> AzureSynapse[Azure Synapse Analytics]
     AzureSynapse --> PowerBI[Power BI]
 
