@@ -1,2 +1,37 @@
 # datadot-e2e-data-pipeline
-e2e Data Pipeline
+
+- [datadot-e2e-data-pipeline](#datadot-e2e-data-pipeline)
+  - [Architecture](#architecture)
+
+
+## Architecture
+
+```mermaid
+flowchart LR
+    DataSource[Data Source] --> DataFactory[Data Factory]
+    DataFactory --> RawDataStore[Raw Data Store\nData Lake Gen 2]
+    RawDataStore --> AzureDatabricks[Azure Databricks]
+    AzureDatabricks --> TransformedDataStore[Transformed Data\nData Lake Gen 2]
+    TransformedDataStore --> AzureSynapse[Azure Synapse Analytics]
+    AzureSynapse --> PowerBI[Power BI]
+    AzureSynapse --> LookerStudio[Looker Studio]
+    AzureSynapse --> Tableau[Tableau]
+
+    subgraph Data_Ingestion
+        DataFactory
+    end
+
+    subgraph Transformation
+        AzureDatabricks
+    end
+
+    subgraph Analytics
+        AzureSynapse
+    end
+
+    subgraph Dashboard
+        PowerBI
+        LookerStudio
+        Tableau
+    end
+```
