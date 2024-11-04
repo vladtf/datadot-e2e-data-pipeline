@@ -14,8 +14,6 @@ flowchart LR
     AzureDatabricks --> TransformedDataStore[Transformed Data\nData Lake Gen 2]
     TransformedDataStore --> AzureSynapse[Azure Synapse Analytics]
     AzureSynapse --> PowerBI[Power BI]
-    AzureSynapse --> LookerStudio[Looker Studio]
-    AzureSynapse --> Tableau[Tableau]
 
     subgraph Data_Ingestion
         DataFactory
@@ -31,7 +29,5 @@ flowchart LR
 
     subgraph Dashboard
         PowerBI
-        LookerStudio
-        Tableau
     end
 ```
