@@ -62,14 +62,14 @@ or
 ## Task List
 
 - [ ] Data Ingestion
- - [ ] Create a storage in Azure
- - [ ] Ingest the data from source to storage
+  - [ ] Create a storage in Azure
+  - [ ] Ingest the data from source to storage
 - [ ] Data Transformation
- - [ ] Prepare a local version of the pipeline to cleanup and transform the data
- - [ ] Automate the data transformation in Azure 
+  - [ ] Prepare a local version of the pipeline to cleanup and transform the data
+  - [ ] Automate the data transformation in Azure 
 - [ ] Data Analytics
- - [ ] Local version of the analysis
- - [ ] Automate in Azure 
+  - [ ] Local version of the analysis
+  - [ ] Automate in Azure 
 - [ ] Data Visualization
 - [ ] Write the documentation
 - [ ] Create a presentation
