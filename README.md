@@ -53,11 +53,7 @@ flowchart LR
 
 ## Data Source 
 
-- [Huge Stock Market Dataset](https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs)
-
-or 
-
-- [New York Stock Exchange](https://www.kaggle.com/datasets/dgawlik/nyse/data)
+- [imdb-dataset](https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset/data)
 
 ## Task List
 
