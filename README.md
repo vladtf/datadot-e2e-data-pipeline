@@ -7,6 +7,7 @@
   - [Problem Statement](#problem-statement)
   - [Task List](#task-list)
   - [Results](#results)
+  - [What we have learned](#what-we-have-learned)
 
 
 ## Architecture
@@ -105,3 +106,14 @@ Overview of the movies based on the runtime:
 Report based on the movies region:
 
 <img src="assets/movies_region.png" alt="Movies Region" width="50%"/>
+
+## What we have learned
+
+- How to create an end-to-end data pipeline using Azure services
+- How to ingest data from a source to a storage in Azure
+- Data transformation is a complex process that involves cleaning, aggregating, and analyzing the data
+- Data transformation requires multiple steps (raw to bronze, bronze to silver, silver to gold)
+- Data visualization is an important aspect of data analysis
+- Data visualization requires understanding the data and selecting the relevant metrics
+- Dataset size and complexity can impact the performance of the data pipeline
+- Dataset may require other data sources to enrich the data
