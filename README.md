@@ -6,6 +6,7 @@
   - [Technology Stack](#technology-stack)
   - [Data Source](#data-source)
   - [Task List](#task-list)
+  - [Results](#results)
 
 
 ## Architecture
@@ -57,16 +58,31 @@ flowchart LR
 
 ## Task List
 
-- [ ] Data Ingestion
-  - [ ] Create a storage in Azure
-  - [ ] Ingest the data from source to storage
-- [ ] Data Transformation
-  - [ ] Prepare a local version of the pipeline to cleanup and transform the data
-  - [ ] Automate the data transformation in Azure 
-- [ ] Data Analytics
-  - [ ] Local version of the analysis
-  - [ ] Automate in Azure 
-- [ ] Data Visualization
+- [x] Data Ingestion
+  - [x] Create a storage in Azure
+  - [x] Ingest the data from source to storage
+- [x] Data Transformation
+  - [x] Prepare a local version of the pipeline to cleanup and transform the data
+  - [x] Automate the data transformation in Azure 
+- [x] Data Analytics
+  - [x] Local version of the analysis
+  - [x] Automate in Azure 
+- [x] Data Visualization
 - [ ] Write the documentation
 - [ ] Create a presentation
 - [ ] Write the essay
+
+## Results
+
+Summary of the movies dataset:
+
+<img src="assets/movies_summary.png" alt="Movies Summary" width="50%"/>
+
+
+Overview of the movies based on the runtime:
+
+<img src="assets/movies_runtime.png" alt="Movies Runtime" width="50%"/>
+
+Report based on the movies region:
+
+<img src="assets/movies_region.png" alt="Movies Region" width="50%"/>
