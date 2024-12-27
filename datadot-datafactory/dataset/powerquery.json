@@ -1,0 +1,21 @@
+{
+	"name": "powerquery",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArmtemplateStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "power",
+				"folderPath": "output",
+				"container": "datafactory"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

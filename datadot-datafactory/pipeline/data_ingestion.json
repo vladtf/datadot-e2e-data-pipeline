@@ -1,0 +1,57 @@
+{
+	"name": "data_ingestion",
+	"properties": {
+		"activities": [
+			{
+				"name": "imdb2bronze",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/eugen.ravariu@stud.acs.upb.ro/imdb2bronze"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "bronze2silver",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "imdb2bronze",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/eugen.ravariu@stud.acs.upb.ro/bronze2silver"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-12-21T14:18:49Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
