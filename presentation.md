@@ -5,6 +5,7 @@ description: "An end-to-end data pipeline project using Azure services."
 theme: gaia
 paginate: true
 backgroundColor: #fff
+backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
 <!-- _class: lead -->
