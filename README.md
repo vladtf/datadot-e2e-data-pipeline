@@ -1,14 +1,20 @@
 # datadot-e2e-data-pipeline
 
 - [datadot-e2e-data-pipeline](#datadot-e2e-data-pipeline)
+  - [Problem Statement](#problem-statement)
   - [Architecture](#architecture)
   - [Articles and Resources](#articles-and-resources)
   - [Data Source](#data-source)
-  - [Problem Statement](#problem-statement)
   - [Task List](#task-list)
   - [Results](#results)
   - [What we have learned](#what-we-have-learned)
 
+
+## Problem Statement
+
+Movies are a popular form of entertainment and are watched by millions of people around the world. The dataset contains information about movies, including the title, genre, rating, runtime, and the number of votes. The goal of this project is to analyze the dataset and provide insights into the distribution of movies based on the genre, rating, runtime, and region. The analysis will help us understand the trends in the movie industry and identify the most popular genres, regions, and runtime. The insights will be visualized using Power BI to create a dashboard that can be used to explore the data and gain a deeper understanding of the movie industry.
+
+The main challenges of the project is caused by the size of the dataset and the need to automate the data transformation process. The dataset contains over 8GB of data and is stored in multiple CSV files. The data transformation process involves cleaning the data, aggregating the information, and performing statistical analysis to generate insights. The data pipeline will be implemented using Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI to automate the data transformation process and create a dashboard for visualization.
 
 ## Architecture
 
@@ -56,11 +62,6 @@ The data pipeline consists of the following components:
 
 - [imdb-dataset](https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset/data)
 
-## Problem Statement
-
-Movies are a popular form of entertainment and are watched by millions of people around the world. The dataset contains information about movies, including the title, genre, rating, runtime, and the number of votes. The goal of this project is to analyze the dataset and provide insights into the distribution of movies based on the genre, rating, runtime, and region. The analysis will help us understand the trends in the movie industry and identify the most popular genres, regions, and runtime. The insights will be visualized using Power BI to create a dashboard that can be used to explore the data and gain a deeper understanding of the movie industry.
-
-The main challenges of the project is caused by the size of the dataset and the need to automate the data transformation process. The dataset contains over 8GB of data and is stored in multiple CSV files. The data transformation process involves cleaning the data, aggregating the information, and performing statistical analysis to generate insights. The data pipeline will be implemented using Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI to automate the data transformation process and create a dashboard for visualization.
 
 ## Task List
 
