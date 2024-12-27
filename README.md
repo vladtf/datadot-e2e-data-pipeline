@@ -58,16 +58,17 @@ flowchart LR
 
 ## Task List
 
-- [x] Data Ingestion
-  - [x] Create a storage in Azure
-  - [x] Ingest the data from source to storage
-- [x] Data Transformation
-  - [x] Prepare a local version of the pipeline to cleanup and transform the data
-  - [x] Automate the data transformation in Azure 
-- [x] Data Analytics
-  - [x] Local version of the analysis
-  - [x] Automate in Azure 
-- [x] Data Visualization
+- [x] Data Ingestion (Eugen)
+  - [x] Create a storage in Azure (Eugen)
+  - [x] Ingest the data from source to storage (Eugen)
+- [x] Data Transformation (Eugen)
+  - [x] Prepare a local version of the pipeline to cleanup and transform the data (Eugen)
+  - [x] Automate the data transformation in Azure  (Eugen)
+- [x] Data Analytics (Vlad)
+  - [x] Transform data (Vlad) 
+- [x] Data Visualization - Powerbi
+  - [x] Create a PowerBI dashboard (Vlad)
+  - [x] Publish the dashboard (Vlad)
 - [ ] Write the documentation
 - [ ] Create a presentation
 - [ ] Write the essay
