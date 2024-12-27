@@ -74,18 +74,18 @@ flowchart LR
 
 ## Results
 
-Summary of the analysis of the movies dataset:
-
-- Best rated genres: History, Documentary, Biography, Animation
-- Distrubution of movies based on the year: Peak in 2021 (501k movies) 
-- Most popupal genres: Drama, Comedy, Talk-Show
-- Rating distribution: Gaussian distribution with a mean of 7.4
-- Runtime average based on the genre: Film-Noir (82 mins), Adult (79 mins), Sport (63 mins)
-- Average rating based on the runtime: Peak at 40 minutes (7.41 rating) which goes down to 6 at 85 minutes and gradually increases to 7.45 at 285 minutes
-- Distribution of movies based on the runtime: Peak at 20 minutes (450k movies), 30 minutes (374k movies), 60 (273k movies)
-- Average number of votes based on the runtime: Bell-shaped curve centered around 90-200 minutes. Peak at 170 minutes (13k votes)
-- Count of movies based on the region: Peak in the US (946k movies), GB (118k movies), IN (334k movies), CA (194k movies), FR (185k movies)
-- Average rating based on the region: UG (7.78), MV (7.66), TN (7.59)
+| Analysis Aspect                              | Details                                                                                                            |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Best rated genres                            | History, Documentary, Biography, Animation                                                                         |
+| Distribution of movies based on the year     | Peak in 2021 (501k movies)                                                                                         |
+| Most popular genres                          | Drama, Comedy, Talk-Show                                                                                           |
+| Rating distribution                          | Gaussian distribution with a mean of 7.4                                                                           |
+| Runtime average based on the genre           | Film-Noir (82 mins), Adult (79 mins), Sport (63 mins)                                                              |
+| Average rating based on the runtime          | Peak at 40 minutes (7.41 rating) which goes down to 6 at 85 minutes and gradually increases to 7.45 at 285 minutes |
+| Distribution of movies based on the runtime  | Peak at 20 minutes (450k movies), 30 minutes (374k movies), 60 (273k movies)                                       |
+| Average number of votes based on the runtime | Bell-shaped curve centered around 90-200 minutes. Peak at 170 minutes (13k votes)                                  |
+| Count of movies based on the region          | Peak in the US (946k movies), GB (118k movies), IN (334k movies), CA (194k movies), FR (185k movies)               |
+| Average rating based on the region           | UG (7.78), MV (7.66), TN (7.59)                                                                                    |
 
 Summary of the movies dataset:
 
