@@ -1,0 +1,17 @@
+{
+	"name": "create_view_func",
+	"properties": {
+		"content": {
+			"query": "USE silver_db\nGO\n\nCREATE OR ALTER PROC CreateSWLServerlessView_silver @ViewName NVARCHAR(100)\nAS\nBEGIN\n    DECLARE @statement VARCHAR(MAX)\n    SET @statement = N'CREATE OR ALTER VIEW ' + @ViewName + ' AS\n        SELECT * FROM \n            OPENROWSET(\n        BULK ''https://datadot1storage.dfs.core.windows.net/silver/imdb/' + @ViewName + '/'',\n        FORMAT = ''DELTA''\n    ) AS [result]'\n\n    EXEC (@statement)\nEND\n\nGO\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
