@@ -75,9 +75,9 @@ The main challenges of the project is caused by the size of the dataset and the 
 - [x] Data Visualization - Powerbi
   - [x] Create a PowerBI dashboard (Vlad)
   - [x] Publish the dashboard (Vlad)
-- [ ] Write the documentation
-- [ ] Create a presentation
-- [ ] Write the essay
+- [ ] Write the documentation (Eugen & Vlad)
+- [ ] Create a presentation (Eugen & Vlad)
+- [ ] Write the essay (Eugen & Vlad)
 
 ## Results
 
