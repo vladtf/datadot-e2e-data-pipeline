@@ -1,6 +1,7 @@
 # datadot-e2e-data-pipeline
 
 - [datadot-e2e-data-pipeline](#datadot-e2e-data-pipeline)
+  - [Team Members](#team-members)
   - [Problem Statement](#problem-statement)
   - [Architecture](#architecture)
   - [Articles and Resources](#articles-and-resources)
@@ -9,6 +10,10 @@
   - [Results](#results)
   - [What we have learned](#what-we-have-learned)
 
+## Team Members
+
+- Eugen-Cristian RAVARIU
+- Vladislav TIFTILOV
 
 ## Problem Statement
 
