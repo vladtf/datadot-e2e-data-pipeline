@@ -108,7 +108,38 @@ TBA
 
 \subsection{Vladislav TIFTILOV}
 
+We live in an era where data is the most valuable asset. Yet, the data itself is not valuable without the insights we can extract from it.
 
+During this project, we purposed ourselves to to learn how to build an end-to-end data pipeline, from data ingestion to visualization, but
+to make the project more meaningful, we also wanted to extract valuable insights from the data. To be able to fulfill this goal, we started
+by choosing a dataset that is both large and complex. We started with a stock market dataset, but we quickly realized that the dataset was
+did not contain insights worth extracting. We then switched to a movies dataset, which was more complex and allowed us to extract insights
+by corelating data across multiple dimensions.
+
+My contribution to the project was to implement the data analysis and visualization part. I used the data that was preprocessed by my colleague
+and stored in Azure Synapse Analytics to create views and extract insights. I then used Power BI to create a dashboard that visualizes the insights.
+What I learned while build the visualizations is that the most meaningful insights are extracted when data is corelated across multiple dimensions.
+For example, by corelating the rating with the runtime, we were able to see that the average rating peaks at 40 minutes, then dips to 6 at 85 minutes,
+and gradually rises to 7.45 at 285 minutes. This kind of insights are only possible when data is analyzed across multiple dimensions.
+
+Another thing that I learned is that cloud providers like Azure provide the necessary tools to build end-to-end data pipelines. The best
+part of using a cloud provider in this case it that all the tools are integrated and work seamlessly together. This allowed us to build
+the entire project using only Platform-as-a-Service (PaaS) tools, without having to worry about infrastructure or maintenance. Toghether with
+integration, Azure also provides scalability, which is essential when working with large datasets. Also, a big advantage of using Azure is
+that it provides authentication and authorization out of the box, which makes it easy to manage access to the data. These features allowed us
+to be able to collaborate on the same resources by giving role based access to the resources, without having to give access to the entire
+Azure subscription. Similar with the communication between the tools, it allowed us to easily configure identities to manage access to the
+data, without having to worry about the underlying infrastructure.
+
+What is worth mentioning, are the challenges we faced during the project. The biggest challenge was to understand the data and extract but also
+to build the pipeline in a way that the data flow is fully automated end-to-end. The data was complex and required multiple transformations
+to be able to extract meaningful insights. Another challenge was to build the pipeline in a way that it is scalable and can handle large amounts
+of data.
+
+In conclusion, the project was a great learning experience. We were able to build an end-to-end data pipeline that automates the process of data
+transformation and visualization. We were able to extract valuable insights from the data and visualize them using Power BI. We learned that
+the most meaningful insights are extracted when data is corelated across multiple dimensions. We also learned that cloud providers like Azure
+provide the necessary tools to build end-to-end data pipelines and that the tools are integrated and work seamlessly together.
 
 \section{Implementation}
 \label{sec:implementation}
