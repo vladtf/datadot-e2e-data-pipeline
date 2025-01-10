@@ -13,6 +13,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{setspace}
+\usepackage{hyperref}
 \usepackage{cite} % For bibliography
 
 % Times New Roman font
@@ -103,7 +104,7 @@ TBA
 
 \subsection{Vladislav TIFTILOV}
 
-TBA
+
 
 \section{Implementation}
 \label{sec:implementation}
@@ -121,7 +122,7 @@ The IMDb dataset contains information about the film industry and consists of fi
     \item \textbf{title\_ratings}: Comprises IMDb movie scores and the number of reviews.
 \end{enumerate}
 
-Link to the dataset: \texttt{https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset/data}
+Link to the dataset: \href{https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset/data}{IMDb Dataset}
 
 \section{Data Ingestion Implementation Steps}
 
@@ -133,10 +134,15 @@ The first step involved building a data lake, a storage infrastructure designed 
 \end{itemize}
 
 \subsection{Configuring Access to the Data Lake}
-Using a dedicated notebook, \texttt{mountStorage.ipynb}, the containers were mounted in Azure Databricks, a scalable data processing platform. This configuration enabled direct access to files stored in the data lake from notebooks.
+Using a dedicated notebook, \texttt{mountStorage.ipynb}, the containers were mounted in 
+Azure Databricks, a scalable data processing platform. This configuration enabled direct 
+access to files stored in the data lake from notebooks.
 
 \subsection{Downloading and Storing Raw Data}
-The dataset download process was implemented in the notebook \texttt{imdb2bronze.ipynb}. The data was obtained from the Kaggle platform using the official library in a Jupyter Notebook environment within Azure Databricks. The data, available as TSV (Tab Separated Values) files, was read using Apache Spark and stored in the \textbf{bronze} container in Parquet format.
+The dataset download process was implemented in the notebook \texttt{imdb2bronze.ipynb}. The data 
+was obtained from the Kaggle platform using the official library in a Jupyter Notebook environment 
+within Azure Databricks. The data, available as TSV (Tab Separated Values) files, was read using 
+Apache Spark and stored in the \textbf{bronze} container in Parquet format.
 
 \subsection{Data Preprocessing}
 Data preprocessing is a critical step in preparing data for analysis. This process was implemented in the notebook \texttt{bronze2silver.ipynb}, including the following steps:
