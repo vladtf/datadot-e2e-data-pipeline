@@ -52,23 +52,27 @@
 \section{Abstract}
 \label{sec:abstract}
 
-Fast growing across all the domains of our daily life determined the need for storing and processing 
-large amounts of data. The challenges a developer faces is not only caused by the amount of the data,
-but also by the variety and quality of the data. Sometimes, the most challenging part is to semantically
-understand the data and to extract valuable information from it. This paper presents an end-to-end data
-pipeline that aims to automate the process of data transformation and visualization. During the project,
-we have discovered the importance of data quality, which made us having to change the dataset several times
-in order to get the most meaningful insights. To be able to face real challenges of the big data world, we
-chose on purpose an dataset that is both large and complex. The dataset contains information about movies,
-including the title, genre, rating, runtime, and the number of votes. We started by cleaning the data and
-aggregating the information, then we performed statistical analysis to generate insights. The decision to
-use Azure was made because we wanted our solution to be end-to-end, from data ingestion to visualization, on
-a single, cloud platform. Another reason was the need for scalability, as the dataset contains over 8GB of data,
-and Azure provides the necessary resources to handle large amounts of data. The data pipeline was implemented
-using Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI. The decision to use to
-go with a movies dataset was made because we wanted to analyze the trends in the movie industry, but also
-because of the complexity of the dataset, which allowed us to get insights based on multiple dimensions, such
-as genre, rating, runtime, and region.
+Fast growth across all domains of our daily life has determined the need for storing and processing 
+large amounts of data. The challenges a developer faces are not only caused by the amount of data, 
+but also by its variety and quality. Sometimes, the most challenging part is to semantically understand 
+the data and to extract valuable information from it.
+
+This paper presents an end-to-end data pipeline that aims to automate the process of data transformation 
+and visualization. During the project, we discovered the importance of data quality, which led us to change 
+the dataset several times in order to get the most meaningful insights. To face real challenges of the 
+big data world, we purposely chose a dataset that is both large and complex. The dataset contains 
+information about movies, including the title, genre, rating, runtime, and the number of votes.
+
+We started by cleaning the data and aggregating the information, then we performed statistical 
+analysis to generate insights. The decision to use Azure was made because we wanted our solution 
+to be end-to-end—from data ingestion to visualization—on a single cloud platform. Another reason 
+was the need for scalability, as the dataset contains over 8GB of data, and Azure provides the 
+necessary resources to handle large amounts of data. The data pipeline was implemented using 
+Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI.
+
+The decision to go with a movies dataset was made because we wanted to analyze trends in 
+the movie industry, but also due to the complexity of the dataset, which allowed us to gain 
+insights across multiple dimensions, such as genre, rating, runtime, and region.
 
 \newpage
 \tableofcontents  % Generates the Table of Contents
