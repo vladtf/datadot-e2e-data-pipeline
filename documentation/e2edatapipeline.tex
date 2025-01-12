@@ -104,7 +104,30 @@ In this section we will present our opinions on the project, the challenges we f
 
 \subsection{Eugen-Cristian RAVARIU}
 
-TBA
+In this project, my primary responsibilities included data ingestion and preprocessing. I utilized Azure services such as Azure Data Lake Gen2, Azure Databricks, and Azure Synapse to accomplish these tasks.
+To begin, I set up a storage account with two containers: "bronze" for raw data and "silver" for preprocessed data ready for analysis. Using Azure Databricks, I executed the project's notebooks. 
+Databricks offers several advantages, including the ability to create compute clusters of varying types and sizes that scale based on workload demand. 
+Additionally, Azure only charges for the cluster while it is running, and notebooks can automatically start clusters when triggered, such as during an Azure Data Factory pipeline.
+
+First, I mounted the two containers in Databricks to enable subsequent notebooks to read from and write to them. I then downloaded the data from Kaggle and stored it in the "bronze" container as five tables. 
+In a separate notebook, I read these tables from the "bronze" container and performed preprocessing tasks. 
+These included renaming columns to snake case, converting appropriate columns to numeric data types, and splitting array columns into new tables. 
+For example, I processed a table containing columns for the film ID and the list of genres by creating a new table with one row for each genre in the list, paired with the corresponding film ID, and removing the column with the genre list. 
+This preprocessing step expanded the original five tables into eight, which were saved in the "silver" container.
+
+The final preprocessing step involved creating SQL views for use in Power BI. 
+I used Azure Synapse to set up a pipeline that processes each table in the "silver" container and generates the corresponding SQL views.
+
+One significant challenge during this project was managing resource access in Azure. 
+Each Azure resource is governed by a set of roles, with each role granting specific permissions. 
+To utilize required features, users or resources must be assigned the appropriate roles. 
+Adhering to the principle of least privilege, I ensured that each module had only the minimum level of access necessary. 
+This approach enhanced both the security and simplicity of the application.
+
+In conclusion, this project provided valuable insights into the practical use of Azure services for data ingestion, preprocessing, and preparation for analysis. 
+Through this experience, I honed my skills in using Azure tools like Data Lake, Databricks, and Synapse, as well as in implementing scalable and robust data workflows. 
+These learnings will undoubtedly contribute to future projects requiring advanced data processing and analysis capabilities.
+
 
 \subsection{Vladislav TIFTILOV}
 
