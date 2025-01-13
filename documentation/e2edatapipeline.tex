@@ -117,6 +117,9 @@ This preprocessing step expanded the original five tables into eight, which were
 The final preprocessing step involved creating SQL views for use in Power BI. 
 I used Azure Synapse to set up a pipeline that processes each table in the "silver" container and generates the corresponding SQL views.
 
+The decision to split the processing into multiple notebooks was made to improve readability and maintainability. This approach also allows the engineering team to
+identify and address issues more easily since each notebook focuses on a specific task~\cite{data-pipeline-management}.
+
 One significant challenge during this project was managing resource access in Azure. 
 Each Azure resource is governed by a set of roles, with each role granting specific permissions. 
 To utilize required features, users or resources must be assigned the appropriate roles. 
