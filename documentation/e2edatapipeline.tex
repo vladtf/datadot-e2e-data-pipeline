@@ -17,8 +17,8 @@
 \usepackage{cite} % For bibliography
 
 % Times New Roman font
-\usepackage[T1]{fontenc}    % Use T1 font encoding
-\usepackage{lmodern}        % Latin Modern typefaces, including typewriter
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{mathptmx}
 
 % Title and subtitle formatting
@@ -44,6 +44,7 @@
     {\bfseries\fontsize{12pt}{12pt} End-to-End Data Pipeline}\par
     \vspace{2.5cm}
     Eugen-Cristian RAVARIU, Vladislav TIFTILOV\\
+    \href{https://github.com/vladtf/datadot-e2e-data-pipeline}{datadot-e2e-data-pipeline (github.com)}\par
     \vfill
     \date{\today}
 \end{titlepage}
@@ -82,20 +83,18 @@ insights across multiple dimensions, such as genre, rating, runtime, and region.
 \section{Introduction}
 \label{sec:introduction}
 
-Movies are a popular form of entertainment and are watched by millions of people around the world. 
-The dataset contains information about movies, including the title, genre, rating, runtime, and the 
-number of votes. The goal of this project is to analyze the dataset and provide insights into the 
-distribution of movies based on the genre, rating, runtime, and region. The analysis will help us 
-understand the trends in the movie industry and identify the most popular genres, regions, and runtime. 
-The insights will be visualized using Power BI to create a dashboard that can be used to explore the 
-data and gain a deeper understanding of the movie industry.
+Movies are one of the most popular forms of entertainment, enjoyed by millions of people worldwide. 
+This project focuses on analyzing a dataset that includes information about movies, such as their titles, 
+genres, ratings, runtimes, and number of votes. The goal is to understand how movies are distributed based 
+on their genre, rating, runtime, and region. This analysis will help identify trends in the movie industry, 
+like the most popular genres and regions, as well as the typical runtimes. The findings will be shown in a 
+Power BI dashboard, making it easy to explore the data and learn more about the movie industry.
 
-The main challenges of the project is caused by the size of the dataset and the need to automate 
-the data transformation process. The dataset contains over 8GB of data and is stored in multiple 
-CSV files. The data transformation process involves cleaning the data, aggregating the information, 
-and performing statistical analysis to generate insights. The data pipeline will be implemented using 
-Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI to automate the data 
-transformation process and create a dashboard for visualization.
+The project has some challenges, mainly because the dataset is very large and needs an automated way 
+to handle it. The dataset is over 8GB in size and is split into several CSV files. To work with this data, 
+we need to clean it, combine the information, and analyze it to find useful insights. We will use tools like 
+Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI to create a system that can handle 
+these tasks automatically and produce a dashboard for easy visualization.
 
 \section{Opinion}
 \label{sec:opinion}
@@ -168,7 +167,9 @@ provide the necessary tools to build end-to-end data pipelines and that the tool
 \section{Implementation}
 \label{sec:implementation}
 
-The end-to-end data pipeline was implemented using Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI. The pipeline consists of the following stages: data ingestion, data preprocessing, data integration, and data visualization. The implementation steps are described below.
+The end-to-end data pipeline was implemented using Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and Power BI. 
+The pipeline consists of the following stages: data ingestion, data preprocessing, data integration, and data visualization. 
+The implementation steps are described below.
 
 \subsection{Dataset Used: IMDb Dataset}
 
@@ -191,18 +192,22 @@ The first step involved building a data lake, a storage infrastructure designed 
 \end{itemize}
 
 \subsection{Configuring Access to the Data Lake}
+
 Using a dedicated notebook, \texttt{mountStorage.ipynb}, the containers were mounted in 
 Azure Databricks, a scalable data processing platform. This configuration enabled direct 
 access to files stored in the data lake from notebooks.
 
 \subsection{Downloading and Storing Raw Data}
+
 The dataset download process was implemented in the notebook \texttt{imdb2bronze.ipynb}. The data 
 was obtained from the Kaggle platform using the official library in a Jupyter Notebook environment 
 within Azure Databricks. The data, available as TSV (Tab Separated Values) files, was read using 
 Apache Spark and stored in the \textbf{bronze} container in Parquet format.
 
 \subsection{Data Preprocessing}
-Data preprocessing is a critical step in preparing data for analysis. This process was implemented in the notebook \texttt{bronze2silver.ipynb}, including the following steps:
+
+Data preprocessing is a critical step in preparing data for analysis. This process was 
+implemented in the notebook \texttt{bronze2silver.ipynb}, including the following steps:
 
 \begin{itemize}
     \item \textbf{Column name transformation}: Conversion of column names to \texttt{snake\_case}.
@@ -215,6 +220,7 @@ Data preprocessing is a critical step in preparing data for analysis. This proce
 The preprocessed data was saved in the \textbf{silver} container in Delta format.
 
 \subsection{Creating SQL Views in Azure Synapse}
+
 For each table in the \textbf{silver} container, views were created in Azure Synapse Analytics. This step facilitated data access and integration in subsequent project stages.
 
 \section{Conclusions}
@@ -275,7 +281,7 @@ Following are some captures of the Power BI dashboard created for the IMDb datas
 \end{figure}
 
 % References Section
-\bibliographystyle{ieeetr} % You can change to "apa" or others if required
-\bibliography{references} % Create a references.bib file for bibliography entries
+\bibliographystyle{ieeetr}
+\bibliography{references}
 
 \end{document}
